@@ -1,0 +1,54 @@
+
+body {
+  padding-top: 56px; /* Add some padding to the top to account for the fixed navbar */
+  background-color: #E6E4CE;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+section {
+  padding: 80px 0;
+  text-align: center;
+}
+.bg-img {
+  background-image: url('image3_blur_s.jpg'); 
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+.btn-scroll {
+  margin-top: 20px;
+}
+
+
+
+.navbar
+{
+  background-color: #E6E4CE !important;
+}
+
+.navbar-brand
+{
+  color: #342E37 !important;
+}
+
+.nav-link:hover
+{
+  color: #342E37 !important;
+}
+
+section, footer
+{
+  background-color: #E6E4CE !important;
+}
+
+h2
+{
+  color: #342E37 !important;
+}
+
+
+
