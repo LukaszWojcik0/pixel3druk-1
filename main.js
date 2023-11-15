@@ -1,6 +1,6 @@
 
 
-import { initializeApp } from "/firebase/app";
+import { initializeApp } from "firebase/app";
 // import {	getAuth      } from "firebase/auth";
 import { getStorage, ref, uploadBytesResumable } from "firebase/storage";
 import firebaseConfig from "./firebaseConfig";
