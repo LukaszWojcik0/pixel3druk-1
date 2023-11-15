@@ -29,7 +29,7 @@ const form = document.getElementById('form');
   } else {
     console.error('Wybierz plik do przesłania.');
   }
-  // form.submit();
+  form.submit();
 }
 
 
