@@ -12,7 +12,8 @@ console.log(storage)
 
 
 function uploadFile(event) {
-event.preventDefault()
+// event.preventDefault()
+const form = document.getElementById('form');
   const fileInput = document.getElementById('fileInput');
   const mail = document.getElementById('inputEmail');
   console.log (fileInput)
@@ -22,9 +23,12 @@ event.preventDefault()
     const storageRef = ref(storage, "/"+mail.textContent+"-"+file.name);
 
     uploadBytesResumable(storageRef, file)
+    
   } else {
     console.error('Wybierz plik do przesłania.');
   }
+  console.log(form)
+  form.submit();
 }
 
 
