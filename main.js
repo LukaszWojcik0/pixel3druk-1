@@ -15,20 +15,21 @@ function uploadFile(event) {
 // event.preventDefault()
 const form = document.getElementById('form');
   const fileInput = document.getElementById('fileInput');
-  const mail = document.getElementById('inputEmail');
-  console.log (fileInput)
+  const mail = document.querySelector("#inputEmail")
+
+  
+
   const file = fileInput.files[0];
-  console.log(file);
+
   if (file) {
-    const storageRef = ref(storage, "/"+mail.textContent+"-"+file.name);
+    const storageRef = ref(storage, "/"+mail.value+"-"+file.name);
 
     uploadBytesResumable(storageRef, file)
     
   } else {
     console.error('Wybierz plik do przesłania.');
   }
-  console.log(form)
-  form.submit();
+  // form.submit();
 }
 
 
