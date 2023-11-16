@@ -14,7 +14,9 @@
 
     <!-- Navbar -->
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-secondary">
-      <a class="navbar-brand font-weight-bold" href="#">pixel3druk</a>
+      <img src="3d-printing.png" width="20" height="20" class="d-inline-block align-top mr-2" alt="logo">
+      <a class="navbar-brand font-weight-bold" href="https://lukaszwojcik0.github.io/pixel3druk-1/">pixel3druk</a>
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -64,7 +66,7 @@
         <div class="row">
           <div class="col-lg-12">
             <h2>Jak przygotować plik</h2>
-            <p>Jeżeli nie wiesz, jak przygotować plik STL to spokojnie, zaraz wszystko Ci wyjaśnię. Pokażę, jak to zrobić na przykładzie programu <b>Archicad</b>, ale w innych programach na pewno działa to bardzo podobnie.</p>
+            <p>Jeżeli nie wiesz, jak przygotować plik STL, to zaraz wszystko Ci wyjaśnię. Pokażę, jak to zrobić na przykładzie programu <b>Archicad</b>, ale w innych programach na pewno działa to bardzo podobnie.</p>
             <p><b>Po pierwsze,</b> musimy odizolować nasz obiekt od reszty projektu. Robimy to <b>zaznaczając</b> nasz obiekt, a następnie <b>kopiując</b> i <b>wklejając</b> go do <b>nowego projektu.</b></p>
             <img class="img-fluid" src="screen1.png" alt="screen1">
             <p class="pt-3">Teraz zmieniamy <b>widok</b> na 3D a następnie wchodzimy w <b>Plik>Zachowaj jako…</b></p>
@@ -88,6 +90,8 @@
       <div class="row">
         <div class="col-lg-12">
           <h2>Wycena</h2>
+          <p>Ile to wszystko kosztuje? <b>Naprawdę niedużo.</b> Dla porównania cena<b> małego modelu</b> (mebla) to koszt w granicach<b> 8-15 zł, a schodów 15-20 zł.</b> Wszystko zależy od <b>modelu i skali.</b> Dokładną wycenę Twojego modelu<b> przyślemy Ci mailem.</b> Przy większych zamówieniach możliwa jest obniżka.</p>
+          <p>Najważniejszy jest <b>termin,</b> prosimy podać datę, w której <b>najpóźniej</b> ma być przekazany druk. Przy dacie <b>większej niż 2 tygodnie</b> następuje obniżka<b> -10%.</b> Zachęcamy do kontaktu. Chętnie odpowiemy na pytania napisane w miejscu <i>Dodatkowy komentarz.</i></p>
           <form id="form" action="https://formsubmit.co/pixel3druk@gmail.com" method="POST">
             <input type="hidden" name="_template" value="table">
             <div class="form-group">
@@ -103,6 +107,10 @@
               <input type="file" class="form-control-file" id="fileInput"  name="Plik" accept=".stl">
             </div>
             <div class="form-group">
+              <label for="">Data ostateczna, do której wydruk ma zostać przekazany (odbiór do ustalenia)</label>
+              <input class="form-control" type="date" name="deadline-date" id="inputDate">
+            </div>
+            <div class="form-group ">
               <label for="inputComment">Dodatkowy komentarz</label>
               <textarea class="form-control" id="inputComment" rows="3" placeholder="Wprowadź dodatkowy komentarz" name="Dodatkowe informacje"></textarea>
             </div>
@@ -111,9 +119,9 @@
               <select class="form-control" id="inputColor" name="Kolor">
                 <option>Biały</option>
                 <option>Czarny</option>
-                <option>Inny*</option>
+                <option>Inny**</option>
               </select>
-              <p>*Opcja innego koloru niż biały lub czarny możliwa tylko przy większej ilości elementów.</p>
+              <p>**Opcja innego koloru niż biały lub czarny możliwa tylko przy większej ilości elementów.</p>
             </div>
             <button type="button" class="btn btn-success" >Wyślij do wyceny</button>
           </form>
