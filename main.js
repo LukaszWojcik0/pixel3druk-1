@@ -8,7 +8,6 @@ import firebaseConfig from "./firebaseConfig";
 const app = initializeApp(firebaseConfig);
 
 const storage = getStorage(app);
-console.log(storage)
 
 
 function uploadFile(event) {
